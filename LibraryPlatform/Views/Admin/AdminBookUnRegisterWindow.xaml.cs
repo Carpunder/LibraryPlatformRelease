@@ -33,15 +33,11 @@ namespace LibraryPlatform.Views.Admin
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
+            
                 _controllers.CopiesController.UnRegisterCopyByLibNumber(booksComboBox.SelectedValue.ToString());
                 MessageBox.Show("Книга списана");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка");
-            }
+            
+            
         }
     }
 }

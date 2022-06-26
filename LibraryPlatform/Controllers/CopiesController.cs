@@ -187,10 +187,11 @@ namespace LibraryPlatform.Controllers
 
         public void UnRegisterCopyByLibNumber(string copyLibNumber)
         {
-            var copy = GetCopyIdByLibNumber(copyLibNumber);
-            var book = _context.Books.FirstOrDefault(x => x.BookId == copy.BookId);
+            var copyId = GetCopyIdByLibNumber(copyLibNumber);
+            var book = _context.Books.FirstOrDefault(x => x.BookId == copyId.BookId);
             book.Count++;
-            _context.Copies.Remove(copy);
+            copyId.InLibrary = false;
+            copyId.IsAvailable = false;
 
             _context.SaveChanges();
         }
