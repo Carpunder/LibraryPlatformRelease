@@ -1,0 +1,26 @@
+﻿<Window x:Class="LibraryPlatform.Views.LibraryFound.CreateBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryPlatform.Views.LibraryFound"
+        mc:Ignorable="d"
+        Title="Создание книги" Height="941" Width="400" ResizeMode="CanMinimize" Icon="/Images/icon.ico">
+    <Grid>
+        <Button x:Name="registerButton" Content="Добавить" HorizontalAlignment="Center" Margin="0,844,0,0" Width="316" Height="50" VerticalAlignment="Top" Click="registerButton_Click"/>
+        <Label x:Name="fioLabel" Content="Название:" Margin="10,10,10,0" FontSize="24" Height="49" VerticalAlignment="Top"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Center" Margin="0,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="22"/>
+        <Label x:Name="phoneLabel" Content="Автор:" Margin="10,120,10,0" FontSize="24" Height="44" VerticalAlignment="Top"/>
+        <TextBox x:Name="authorTextBox" HorizontalAlignment="Center" Margin="0,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="22"/>
+        <Label x:Name="addressLabel" Content="Дата публикации:" Margin="10,233,10,0" FontSize="24" Height="49" VerticalAlignment="Top"/>
+        <Label x:Name="passportLabel" Content="Количество страниц:" Margin="10,339,10,0" FontSize="24" Height="49" VerticalAlignment="Top"/>
+        <TextBox x:Name="pagesTextBox" HorizontalAlignment="Center" Margin="0,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="22"/>
+        <DatePicker x:Name="publicationDate" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top" Width="380" Height="47" FontSize="24"/>
+        <Label x:Name="passportLabel_Copy" Content="Жанр:" Margin="10,458,10,0" FontSize="24" Height="49" VerticalAlignment="Top"/>
+        <TextBox x:Name="ganreTextBox" HorizontalAlignment="Center" Margin="0,509,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="22"/>
+        <Label x:Name="passportLabel_Copy1" Content="Количество экземпляров:" Margin="10,573,10,0" FontSize="24" Height="49" VerticalAlignment="Top"/>
+        <TextBox x:Name="copyTextBox" HorizontalAlignment="Center" Margin="0,624,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" FontSize="22"/>
+        <Label x:Name="passportLabel_Copy2" Content="Издатель:" Margin="10,687,10,0" FontSize="24" Height="49" VerticalAlignment="Top"/>
+        <ComboBox x:Name="publisherComboBox" HorizontalAlignment="Center" Margin="0,741,0,0" VerticalAlignment="Top" Width="380" FontSize="24"/>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+<Window x:Class="LibraryPlatform.Views.Readers.ReadersMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:LibraryPlatform.Views.Readers"
+        mc:Ignorable="d"
+        Title="Читатели" Height="650" Width="1200" Icon="/Images/icon.ico" ResizeMode="CanMinimize">
+    <Grid>
+        <Label x:Name="inLibraryLable" Content="Читатели" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <DataGrid x:Name="readersInLibrary" Margin="10,71,10,70" d:ItemsSource="{d:SampleData ItemCount=5}" CanUserReorderColumns="False" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер билета" Binding="{Binding LibraryCardNumber}"/>
+                <DataGridTextColumn Header="ФИО" Binding="{Binding FIO}"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Address}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="registerUserButton" Content="Добавить" HorizontalAlignment="Left" Margin="10,569,0,0" Width="173" Height="32" VerticalAlignment="Top" Click="registerUserButton_Click"/>
+        <Button x:Name="getAllBooksButton" Content="Показать все" HorizontalAlignment="Left" Margin="234,569,0,0" Width="173" Height="32" VerticalAlignment="Top" Click="getAllBooksButton_Click"/>
+        <Button x:Name="readerDetailsButton" Content="Подробно" HorizontalAlignment="Left" Margin="952,569,0,0" Width="173" Height="32" VerticalAlignment="Top" Click="readerDetailsButton_Click"/>
+
+    </Grid>
+</Window>

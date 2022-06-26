@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "79a4d3b4-608f-4352-9453-04b7642071a7": {
+      "ProjectGuid": "79a4d3b4-608f-4352-9453-04b7642071a7",
+      "DisplayName": "LibraryPlatform",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "fa0ca88b-e4ec-45dd-9a09-3b28c13650a0": {
+      "ProjectGuid": "fa0ca88b-e4ec-45dd-9a09-3b28c13650a0",
+      "DisplayName": "LibraryPlatformAdmin",
+      "ColorIndex": 1
+    },
+    "ced4910a-828c-42c1-a0ab-a8992759f728": {
+      "ProjectGuid": "ced4910a-828c-42c1-a0ab-a8992759f728",
+      "DisplayName": "LibaryPlatformFound",
+      "ColorIndex": 2
+    },
+    "057949e9-84f8-48c6-99f7-788e21812e1b": {
+      "ProjectGuid": "057949e9-84f8-48c6-99f7-788e21812e1b",
+      "DisplayName": "WpfApp1",
+      "ColorIndex": 3
+    },
+    "5eb6ac65-fab1-47fd-bf5b-a67ca4324a09": {
+      "ProjectGuid": "5eb6ac65-fab1-47fd-bf5b-a67ca4324a09",
+      "DisplayName": "WpfApp2",
+      "ColorIndex": 4
+    },
+    "1ef6d921-af44-45a5-bf3c-7bb03725009a": {
+      "ProjectGuid": "1ef6d921-af44-45a5-bf3c-7bb03725009a",
+      "DisplayName": "WindowsFormsApp1",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

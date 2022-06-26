@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryPlatform.Views.Admin"
+        xmlns:Models="clr-namespace:LibraryPlatform.Models" x:Class="LibraryPlatform.Views.Admin.AdminBookWindow"
+        mc:Ignorable="d"
+        Title="Книги" Height="650" Width="1200" Icon="/Images/icon.ico" ResizeMode="CanMinimize">
+    <Grid>
+        <Label x:Name="inLibraryLable" Content="В библиотеке" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <DataGrid x:Name="copiesInLibraryTable" Margin="10,71,10,70" d:ItemsSource="{d:SampleData ItemCount=5}" CanUserReorderColumns="False" IsReadOnly="False" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер книги" Binding="{Binding CopyNumber}"/>
+                <DataGridTextColumn Header="Номер библиотеки" Binding="{Binding CodeNumber}"/>
+                <DataGridTextColumn Header="Название Книги" Binding="{Binding BookName}"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding Author}"/>
+                <DataGridTextColumn Header="Издание" Binding="{Binding Publisher}"/>
+                <DataGridTextColumn Header="Год Издания" Binding="{Binding YearOfPublishing}"/>
+                <DataGridTextColumn Header="Город Издания" Binding="{Binding PublisherCity}"/>
+                <DataGridTextColumn Header="Библиотека" Binding="{Binding LibraryNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="getFromStockButton" Content="Заказать" HorizontalAlignment="Left" Margin="10,569,0,0" Width="173" Click="getFromStockButton_Click" Height="32" VerticalAlignment="Top"/>
+        <Button x:Name="getAllBooksButton" Content="Показать все" HorizontalAlignment="Left" Margin="436,569,0,0" Width="174" Height="32" VerticalAlignment="Top" Click="getAllBooksButton_Click"/>
+        <Button x:Name="getInLibraryButton" Content="В библиотеке" HorizontalAlignment="Left" Margin="630,569,0,0" Width="172" Height="32" VerticalAlignment="Top" Click="getInLibraryButton_Click"/>
+        <Button x:Name="giveToStockButton" Content="Списать" HorizontalAlignment="Left" Margin="211,569,0,0" Width="173" Click="giveToStockButton_Click" Height="32" VerticalAlignment="Top"/>
+        <Button x:Name="detailsButton" Content="Подробно" HorizontalAlignment="Left" Margin="989,569,0,0" Width="172" Height="32" VerticalAlignment="Top" Click="detailsButton_Click"/>
+
+    </Grid>
+</Window>

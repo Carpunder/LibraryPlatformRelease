@@ -1,0 +1,14 @@
+﻿<Window x:Class="LibraryPlatform.Views.LibraryFound.LibraryFoundMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryPlatform.Views.LibraryFound"
+        mc:Ignorable="d"
+        Title="Фонд" Height="287" Width="296" ResizeMode="CanMinimize" Icon="/Images/icon.ico">
+    <Grid>
+        <Button x:Name="publishersButton" Content="Издания" HorizontalAlignment="Center" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="276" Click="publishersButton_Click"/>
+        <Button x:Name="booksButton" Content="Книги" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="276" Margin="0,131,0,0" Cursor="Hand" Click="booksButton_Click"/>
+
+    </Grid>
+</Window>

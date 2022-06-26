@@ -1,0 +1,24 @@
+﻿<Window x:Class="LibraryPlatform.Views.LibraryFound.BookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryPlatform.Views.LibraryFound"
+        mc:Ignorable="d"
+        Title="BookWindow" Height="450" Width="1055">
+    <Grid>
+        <DataGrid x:Name="booksdataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" AutoGenerateColumns="False" FontSize="12" PreviewKeyDown="booksdataGrid_PreviewKeyDown" RowEditEnding="booksdataGrid_RowEditEnding" Margin="0,0,0,10">
+            <DataGrid.Columns>
+                
+                <DataGridTextColumn Header="Название" Binding="{Binding Title, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Автор" Binding="{Binding Author, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Дата публикации" Binding="{Binding DateOfPublication, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Кол. страниц" Binding="{Binding Pages, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Жанр" Binding="{Binding Genre, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridTextColumn Header="Кол. экземпляров" Binding="{Binding Count, UpdateSourceTrigger=PropertyChanged}"/>
+                <DataGridComboBoxColumn x:Name="comboBoxColum" Header="Издатель"  SelectedItemBinding="{Binding Path=Publisher, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="Name" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
